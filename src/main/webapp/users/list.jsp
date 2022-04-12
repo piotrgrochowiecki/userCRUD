@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,15 +72,8 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Piotr Grochowiecki 2022 - Created using Bootstrap SB Admin 2 template</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            <%@include file="/footer.jsp" %>
+
             </div>
         <!-- End of Content Wrapper -->
         </div>
