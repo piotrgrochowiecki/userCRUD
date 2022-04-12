@@ -12,6 +12,7 @@ public class UserDao {
 
 //    private static final String DROP_DATABASE_QUERY = "DROP DATABASE IF EXISTS ";
 //    private static final String CREATE_DATABASE_QUERY = "CREATE DATABASE IF NOT EXISTS " + DATABASE + " CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci";
+//    private static final String DATABASE = "workshop2";
     private static final String CREATE_USERS_TABLE = "CREATE TABLE IF NOT EXISTS users(\n" +
             "    id INT(11) AUTO_INCREMENT NOT NULL,\n" +
             "    email VARCHAR(255) NOT NULL UNIQUE,\n" +
