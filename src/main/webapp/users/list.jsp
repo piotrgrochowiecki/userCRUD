@@ -67,8 +67,37 @@
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                         <a href="/users/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Add user</a>
                     </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Users List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>User Name</th>
+                                        <th>E-mail</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <c:forEach items="${users}" var="user">
+                                        <tr>
+                                            <td>${user.id}</td>
+                                            <td>${user.userName}</td>
+                                            <td>${user.email}</td>
+                                            <td>
+                                                <a href='<c:url value="/user/delete?id=${user.id}"/>'>Delete</a>
+                                                <a href='<c:url value="/user/edit?id=${user.id}"/>'>Edit</a>
+                                                <a href='<c:url value="/user/show?id=${user.id}"/>'>Show details</a>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
+                                </table>
+                            </div>
+                        </div>
                     <!-- /.container-fluid -->
                 </div>
+            </div>
             </div>
             <!-- End of Main Content -->
 
